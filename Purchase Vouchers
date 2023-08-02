@@ -1,0 +1,13 @@
+date,voucher_type,party_ledger,reference_number,voucher_number,item_name,rate,amount,actual_quantity,billed_quantity
+20230401,Purchase,Shrey,1,1,Adani Green,1500.00/unit,-150000.00,100 unit,100 unit
+20230401,Purchase,Shrey,1,1,Adani Ports,800.00/unit,-160000.00,200 unit,200 unit
+20230401,Purchase,Shrey,1,1,TCS,3100.00/unit,-155000.00,50 unit,50 unit
+20230401,Purchase,Shrey,2,2,INFY,1400.00/unit,-35000.00,25 unit,25 unit
+20230401,Purchase,Shrey,2,2,TCS,3100.00/unit,-77500.00,25 unit,25 unit
+20230401,Purchase,Shrey,2,2,Reliance,2500.00/unit,-250000.00,100 unit,100 unit
+20230401,Purchase,Ramesh,3,3,TCS,3100.00/unit,-465000.00,150 unit,150 unit
+20230401,Purchase,Girish,4,4,Reliance,2500.00/unit,-250000.00,100 unit,100 unit
+20230401,Purchase,Girish,4,4,TCS,3100.00/unit,-155000.00,50 unit,50 unit
+20230401,Purchase,Girish,4,4,Adani Ports,800.00/unit,-20000.00,25 unit,25 unit
+20230401,Purchase,Girish,4,4,Adani Green,1500.00/unit,-150000.00,100 unit,100 unit
+20230401,Purchase,Girish,4,4,INFY,1400.00/unit,-280000.00,200 unit,200 unit
