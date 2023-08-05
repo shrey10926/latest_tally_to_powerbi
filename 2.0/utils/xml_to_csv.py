@@ -13,7 +13,8 @@ class ToCSV():
 
 
     def all_data_xml_to_df():
-
+        
+        data = dict()
         for voucher_type in ['Sales Vouchers', 'Purchase Vouchers']:
             f = join_path('output_files', str(voucher_type)+'.xml')
             with open(f, 'r'):
@@ -24,6 +25,6 @@ class ToCSV():
                 xmlstr = et.tostring(xml_data, encoding='utf-8', method='xml')
 
                 data_dict = dict(xmltodict.parse(xmlstr))
-                data = data_dict['ENVELOPE']['BODY']['DATA']['TALLYMESSAGE']
-
-                print(data)
+                data[voucher_type] = data_dict['ENVELOPE']['BODY']['DATA']['TALLYMESSAGE']
+        
+        return data
