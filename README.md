@@ -1,12 +1,13 @@
 # Tally-to-PowerBI
 Create Power Bi dashboard with the data comming from Tally server with python
 ---
-## script for both the sales and purchase file is done, just run the run.bat
 
-run the run.bat file and you will get a csv file will all the voucher details including sales and purchase
-data will be updated in csv file, if there is no csv file, it will be created with headers and it there is csv file, only rows will be appended
+DONE :
+1.) Data fetch from tally prime has been done using requests module.
+2.) From Date and To Date can be changes from python script itself.
+3.) Convert xml to csv/excel part has been done.
 
-note: review/edit the purchase_voucher_fetch.xml and sales_voucher_fetch.xml as per requirement i.g. date, purchase or sales.
-
-Done: TODO: make the xml file editable for date
-date will be chage automatically in xml file by today's date
+TODO:
+1.) Create PBI Dashboard.
+2.) Automate end to end process by creating a Windows batch file.
+3.) Cover all of the cases for fetch data from tally.

@@ -1,7 +1,7 @@
 from utils.get_xml_from_tally import GetXML
 from utils.xml_to_csv import ToCSV
 
-GetXML()
+# GetXML()
 
 data = ToCSV.all_data_xml_to_df()
 
@@ -87,7 +87,7 @@ ToCSV.filter_data(data)
 # print(final_purchase_data)
 # print()
 
-# for i in final_purchase_data:
-#     for k, v in i.items():
-#         print(f"{k} --> {v}")
-#     print()
+for i in final_purchase_data:
+    for k, v in i.items():
+        print(f"{k} --> {v}")
+    print()
