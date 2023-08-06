@@ -1,0 +1,4 @@
+V_TYPE,V_No,DATE,STATE,PLACEOFSUPPLY,PARTYLEDGERNAME,TOTAL_BILLED_AMOUNT,NARRATION,ITEM_NAME,ITEM_AMOUNT
+Purchase,1,20230401,Gujarat,Gujarat,Ratnam,10000.00,bought A100 GPU for INR 10000,A100,-10000.00
+Purchase,2,20230401,Gujarat,Gujarat,Kenil,54000.00,bought jetson nano for inr 4000 and rtx a6000 for 50000,RTX A6000,-50000.00
+Purchase,2,20230401,Gujarat,Gujarat,Kenil,54000.00,bought jetson nano for inr 4000 and rtx a6000 for 50000,Jetson Nano,-4000.00

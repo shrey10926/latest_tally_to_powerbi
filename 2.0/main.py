@@ -5,4 +5,6 @@ GetXML()
 
 data = ToCSV.all_data_xml_to_df()
 
-ToCSV.filter_data(data)
+final_data = ToCSV.filter_data(data)
+
+ToCSV.data_to_csv(final_data)
