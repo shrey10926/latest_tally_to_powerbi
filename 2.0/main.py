@@ -1,6 +1,6 @@
 from utils.get_xml_from_tally import GetXML
 from utils.xml_to_csv import ToCSV
-
+import pandas as pd
 # GetXML()
 
 data = ToCSV.all_data_xml_to_df()
@@ -88,3 +88,38 @@ for i in final_purchase_data:
     for k, v in i.items():
         print(f"{k} --> {v}")
     print()
+
+
+purchase_df = []
+for entry in final_purchase_data:
+    v_type = entry['V_TYPE']
+    v_no = entry['V_No']
+    date = entry['DATE']
+    state = entry['STATE']
+    place_of_supply = entry['PLACEOFSUPPLY']
+    part_ledger_name = entry['PARTYLEDGERNAME']
+    narration = entry['NARRATION']
+    for item in entry['ITEMS']:
+        item_name = item['NAME']
+        amount = item['AMOUNT']
+        purchase_df.append([v_type, v_no, date, state, place_of_supply, part_ledger_name, narration, item_name, amount])
+
+p_df = pd.DataFrame(purchase_df, columns=['V_TYPE', 'V_NO', 'DATE', 'STATE', 'PLACE_OF_SUPPLY', 'PARTY_LEDGER_NAME', 'NARRATION', 'ITEMS', 'AMOUNT'])
+
+
+
+sales_df = []
+for entry in final_sales_data:
+    v_type = entry['V_TYPE']
+    v_no = entry['V_No']
+    date = entry['DATE']
+    state = entry['STATE']
+    place_of_supply = entry['PLACEOFSUPPLY']
+    part_ledger_name = entry['PARTYLEDGERNAME']
+    narration = entry['NARRATION']
+    for item in entry['ITEMS']:
+        item_name = item['NAME']
+        amount = item['AMOUNT']
+        sales_df.append([v_type, v_no, date, state, place_of_supply, part_ledger_name, narration, item_name, amount])
+
+s_df = pd.DataFrame(sales_df, columns=['V_TYPE', 'V_NO', 'DATE', 'STATE', 'PLACE_OF_SUPPLY', 'PARTY_LEDGER_NAME', 'NARRATION', 'ITEMS', 'AMOUNT'])
