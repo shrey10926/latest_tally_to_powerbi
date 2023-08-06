@@ -15,6 +15,9 @@ class ToCSV():
 
 
     def all_data_xml_to_df():
+        '''
+        extract all data from xml files to dictionary
+        '''
         data = dict()
 
         for voucher_type in ['Sales Vouchers', 'Purchase Vouchers']:
@@ -34,6 +37,9 @@ class ToCSV():
     
     
     def filter_data(data):
+        '''
+        return only required data as final_data
+        '''
         final_data = dict()
 
         for data_type in ('Sales Vouchers', 'Purchase Vouchers'):
@@ -89,6 +95,9 @@ class ToCSV():
 
 
     def data_to_csv(final_data):
+        '''
+        save purchase and sales vouchers data into two saperate csv files
+        '''
         for data_type in ('Sales Vouchers', 'Purchase Vouchers'):
             try:
                 csv_file = f"{data_type}.csv"
