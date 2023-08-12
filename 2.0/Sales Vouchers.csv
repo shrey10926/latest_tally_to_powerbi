@@ -1,6 +1,7 @@
 V_TYPE,V_No,DATE,STATE,PLACEOFSUPPLY,PARTYLEDGERNAME,TOTAL_BILLED_AMOUNT,NARRATION,ITEM_NAME,ITEM_AMOUNT
-Sales,1,20230401,Gujarat,Gujarat,Ronak,-11000.00,a100 for int 11000,A100,11000.00
-Sales,2,20230401,Gujarat,Gujarat,Kenil,-65000.00,sold jetson nano for inr 5000 and rtx a6000 for 60000,Jetson Nano,5000.00
-Sales,2,20230401,Gujarat,Gujarat,Kenil,-65000.00,sold jetson nano for inr 5000 and rtx a6000 for 60000,RTX A6000,60000.00
-Sales,3,20230401,Gujarat,Gujarat,Ratnam,-63500.00,sold jetson nano for inr 3500 and rtx a6000 for 60000,Jetson Nano,3500.00
-Sales,3,20230401,Gujarat,Gujarat,Ratnam,-63500.00,sold jetson nano for inr 3500 and rtx a6000 for 60000,RTX A6000,60000.00
+Sales,1,20230402,,,Shrey,-280000.00,DLJNSNANAkkks,Adani Green,40000.00
+Sales,1,20230402,,,Shrey,-280000.00,DLJNSNANAkkks,TCS,240000.00
+Sales,2,20230402,,,Girish,-323750.00,cdvafbafb,Adani Ports,63750.00
+Sales,2,20230402,,,Girish,-323750.00,cdvafbafb,Reliance,260000.00
+Sales,3,20230402,Gujarat,Goa,Shrey,-104500.00,dsavRWVARV,TCS,49500.00
+Sales,3,20230402,Gujarat,Goa,Shrey,-104500.00,dsavRWVARV,Reliance,55000.00

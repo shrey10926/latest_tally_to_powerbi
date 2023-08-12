@@ -1,4 +1,19 @@
 V_TYPE,V_No,DATE,STATE,PLACEOFSUPPLY,PARTYLEDGERNAME,TOTAL_BILLED_AMOUNT,NARRATION,ITEM_NAME,ITEM_AMOUNT
-Purchase,1,20230401,Gujarat,Gujarat,Ratnam,10000.00,bought A100 GPU for INR 10000,A100,-10000.00
-Purchase,2,20230401,Gujarat,Gujarat,Kenil,54000.00,bought jetson nano for inr 4000 and rtx a6000 for 50000,RTX A6000,-50000.00
-Purchase,2,20230401,Gujarat,Gujarat,Kenil,54000.00,bought jetson nano for inr 4000 and rtx a6000 for 50000,Jetson Nano,-4000.00
+Purchase,1,20230401,Andaman & Nicobar Islands,,Shrey,465000.00,Stock Purchased on 13/4/2023,Adani Green,-150000.00
+Purchase,1,20230401,Andaman & Nicobar Islands,,Shrey,465000.00,Stock Purchased on 13/4/2023,Adani Ports,-160000.00
+Purchase,1,20230401,Andaman & Nicobar Islands,,Shrey,465000.00,Stock Purchased on 13/4/2023,TCS,-155000.00
+Purchase,2,20230401,,,Shrey,362500.00,Stocks bought on 13/4/2023,INFY,-35000.00
+Purchase,2,20230401,,,Shrey,362500.00,Stocks bought on 13/4/2023,TCS,-77500.00
+Purchase,2,20230401,,,Shrey,362500.00,Stocks bought on 13/4/2023,Reliance,-250000.00
+Purchase,3,20230401,Andaman & Nicobar Islands,,Ramesh,465000.00,Stocks bought on 13/4/2023,TCS,-465000.00
+Purchase,4,20230401,,,Girish,855000.00,stocks bought on 13/4/2023,Reliance,-250000.00
+Purchase,4,20230401,,,Girish,855000.00,stocks bought on 13/4/2023,TCS,-155000.00
+Purchase,4,20230401,,,Girish,855000.00,stocks bought on 13/4/2023,Adani Ports,-20000.00
+Purchase,4,20230401,,,Girish,855000.00,stocks bought on 13/4/2023,Adani Green,-150000.00
+Purchase,4,20230401,,,Girish,855000.00,stocks bought on 13/4/2023,INFY,-280000.00
+Purchase,5,20230401,,,Girish,9.00,,Adani Green,-9.00
+Purchase,6,20230402,,,Shrey,77500.00,lkNVRNVQENB,Adani Green,-37500.00
+Purchase,6,20230402,,,Shrey,77500.00,lkNVRNVQENB,Adani Ports,-40000.00
+Purchase,7,20230402,Gujarat,Gujarat,Shrey,272750.00,aaegabadvd,TCS,-72500.00
+Purchase,7,20230402,Gujarat,Gujarat,Shrey,272750.00,aaegabadvd,Reliance,-60000.00
+Purchase,7,20230402,Gujarat,Gujarat,Shrey,272750.00,aaegabadvd,TCS,-140250.00
