@@ -24,6 +24,16 @@ class ToCSV():
         else:
             print(f"The '{folder_name}' folder already exists.")
 
+
+        folder_name = "csv_files"
+
+        if not os.path.exists(folder_name):
+            os.mkdir(folder_name)
+            print(f"The '{folder_name}' folder was created.")
+        else:
+            print(f"The '{folder_name}' folder already exists.")
+
+
         folder_name = "xml_files"
         file_name = "get_vouchers.xml"
 
@@ -191,7 +201,7 @@ class ToCSV():
         '''
         save purchase and sales vouchers data into two saperate csv files
         '''
-        csv_file = "combined.csv"
+        csv_file = os.path.join("csv_files", "combined.csv")
         # csv_columns = ['V_TYPE',
         #                 'V_No',
         #                 'DATE',
