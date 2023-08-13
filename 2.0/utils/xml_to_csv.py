@@ -238,6 +238,8 @@ class ToCSV():
                 }
 
                 combined_data = combined_data.astype(convert_dict)
+                combined_data.replace('nan', None, inplace=True)
+                combined_data.replace('None', None, inplace=True)
                 
                 deduplicated_data = combined_data.drop_duplicates(keep='first')
 
