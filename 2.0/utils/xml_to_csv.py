@@ -9,6 +9,7 @@ from xml.etree import ElementTree as et
 import xmltodict
 import csv
 import os
+import pandas as pd
 
 class ToCSV():
     def __init__():
@@ -191,31 +192,56 @@ class ToCSV():
         save purchase and sales vouchers data into two saperate csv files
         '''
         csv_file = "combined.csv"
-        csv_columns = ['V_TYPE',
-                        'V_No',
-                        'DATE',
-                        'PARTYLEDGERNAME',
-                        'PLACEOFSUPPLY',
-                        'STATE',
-                        'TOTAL_BILLED_AMOUNT',
-                        'ITEM_NAME',
-                        'QUANTITY',
-                        'RATE',
-                        'ITEM_AMOUNT',
-                        'NARRATION',
-                        ]
+        # csv_columns = ['V_TYPE',
+        #                 'V_No',
+        #                 'DATE',
+        #                 'PARTYLEDGERNAME',
+        #                 'PLACEOFSUPPLY',
+        #                 'STATE',
+        #                 'TOTAL_BILLED_AMOUNT',
+        #                 'ITEM_NAME',
+        #                 'QUANTITY',
+        #                 'RATE',
+        #                 'ITEM_AMOUNT',
+        #                 'NARRATION',
+        #                 ]
 
-        #check if csv file is exist or not, if not create and add headers
-        if not isfile(csv_file):
-            with open(csv_file, 'w', newline='') as output_file:
-                dict_writer = csv.DictWriter(output_file, csv_columns)
-                dict_writer.writeheader()
+        # #check if csv file is exist or not, if not create and add headers
+        # if not isfile(csv_file):
+        #     with open(csv_file, 'w', newline='') as output_file:
+        #         dict_writer = csv.DictWriter(output_file, csv_columns)
+        #         dict_writer.writeheader()
 
         for data_type in ('Sales Vouchers', 'Purchase Vouchers'):
             try:
-                with open(csv_file, 'a', newline='') as output_file:
-                    dict_writer = csv.DictWriter(output_file, csv_columns)
-                    dict_writer.writerows(final_data[data_type])
+                if os.path.exists(csv_file):
+                    existing_data = pd.read_csv(csv_file)
+                    new_data = pd.DataFrame(final_data[data_type])
+                    combined_data = pd.concat([existing_data, new_data], ignore_index=True)
+
+                else:
+                    combined_data = pd.DataFrame(final_data[data_type])
+                
+                convert_dict = {
+                    'V_TYPE': str,
+                    'V_No': int,
+                    'DATE': str,
+                    'PARTYLEDGERNAME': str,
+                    'PLACEOFSUPPLY': str,
+                    'STATE': str,
+                    'TOTAL_BILLED_AMOUNT': float,
+                    'ITEM_NAME': str,
+                    'QUANTITY': str,
+                    'RATE': str,
+                    'ITEM_AMOUNT': float,
+                    'NARRATION': str,
+                }
+
+                combined_data = combined_data.astype(convert_dict)
+                
+                deduplicated_data = combined_data.drop_duplicates(keep='first')
+
+                deduplicated_data.to_csv(csv_file, index=False)
 
                 print(f'{data_type} saved in csv file')
 
