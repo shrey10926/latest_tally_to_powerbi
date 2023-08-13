@@ -7,9 +7,10 @@ DONE :
 2.) From Date and To Date can be changes from python script itself.  
 3.) Convert xml to csv/excel part has been done.  
 4.) Automate end to end process by creating a Windows batch file.  
+5.) Add code for removing duplicates.  
   
 TODO:  
 1.) Create PBI Dashboard.  
 2.) Cover all of the cases for fetch data from tally.  
-3.) Add code for removing duplicates.  
+
   
