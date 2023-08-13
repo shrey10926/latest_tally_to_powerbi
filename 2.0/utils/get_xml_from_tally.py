@@ -19,9 +19,7 @@ class GetXML():
         # tally ip and port
         url = "http://localhost:9000"
 
-        print('2')
         for voucher_type in ['Purchase Vouchers', 'Sales Vouchers']:
-            print('1')
             tree = et.parse('xml_files/get_vouchers.xml')
             root = tree.getroot()
 

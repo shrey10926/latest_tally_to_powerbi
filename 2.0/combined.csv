@@ -1,4 +1,10 @@
 V_TYPE,V_No,DATE,PARTYLEDGERNAME,PLACEOFSUPPLY,STATE,TOTAL_BILLED_AMOUNT,ITEM_NAME,QUANTITY,RATE,ITEM_AMOUNT,NARRATION
+Sales,1,20230402,Shrey,,,-280000.00,Adani Green,25 unit,1600.00/unit,40000.00,DLJNSNANAkkks
+Sales,1,20230402,Shrey,,,-280000.00,TCS,75 unit,3200.00/unit,240000.00,DLJNSNANAkkks
+Sales,2,20230402,Girish,,,-323750.00,Adani Ports,75 unit,850.00/unit,63750.00,cdvafbafb
+Sales,2,20230402,Girish,,,-323750.00,Reliance,100 unit,2600.00/unit,260000.00,cdvafbafb
+Sales,3,20230402,Shrey,Goa,Gujarat,-104500.00,TCS,15 unit,3300.00/unit,49500.00,dsavRWVARV
+Sales,3,20230402,Shrey,Goa,Gujarat,-104500.00,Reliance,25 unit,2200.00/unit,55000.00,dsavRWVARV
 Purchase,1,20230401,Shrey,,Andaman & Nicobar Islands,465000.00,Adani Green,100 unit,1500.00/unit,-150000.00,Stock Purchased on 13/4/2023
 Purchase,1,20230401,Shrey,,Andaman & Nicobar Islands,465000.00,Adani Ports,200 unit,800.00/unit,-160000.00,Stock Purchased on 13/4/2023
 Purchase,1,20230401,Shrey,,Andaman & Nicobar Islands,465000.00,TCS,50 unit,3100.00/unit,-155000.00,Stock Purchased on 13/4/2023
