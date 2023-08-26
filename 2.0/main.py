@@ -1,5 +1,7 @@
-from utils.get_xml_from_tally import GetXML
-from utils.xml_to_csv import ToCSV
+from utilss.get_xml_from_tally import GetXML
+from utilss.xml_to_csv import ToCSV
+from utilss.prep_final_csv import pbi_csv
+
 
 ToCSV.make_required_folders_files()
 
@@ -14,3 +16,6 @@ final_data = ToCSV.filter_data(data)
 
 #for saving sames and purchase daata into one combined file
 ToCSV.combined_data_to_csv(final_data)
+
+#prepping the final csv for PBI dash!
+x = pbi_csv()
